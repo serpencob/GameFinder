@@ -3,13 +3,27 @@
   <head>
     <meta charset=UTF-8>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angular2 Seed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <title>Game Finder</title>
     <base href="/">
+
   </head>
-  <body>
+  <body style="background-color: rgba(175, 173, 180, 0.69)" class="container-fluid">
 
     <app>
-      Loading...
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+      </div>
     </app>
 
     <script src="/polyfills.bundle.js"></script>
