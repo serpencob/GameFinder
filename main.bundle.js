@@ -12512,7 +12512,7 @@ webpackJsonp([1],[
 	        this.http = http;
 	    }
 	    SoundApiService.prototype.getTraks = function (gameTitle) {
-	        return this.http.get('http://ws.audioscrobbler.com/2.0/?method=track.search&track=' + gameTitle + '&api_key=8d481b08de6604866319ed6f8588ab32&limit=5&format=json')
+	        return this.http.get('http://ws.audioscrobbler.com/2.0/?method=track.search&track=' + gameTitle + ' OST&api_key=8d481b08de6604866319ed6f8588ab32&limit=5&format=json')
 	            .map(function (data) { return data = data.json(); });
 	    };
 	    SoundApiService = __decorate([
