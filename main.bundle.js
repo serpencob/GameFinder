@@ -28897,7 +28897,7 @@ webpackJsonp([1],[
 /* 556 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"imgs\">\n          <img *ngIf=\"element.thumb ==''\" class=\"poster\" src=\"http://www.puravankara.com/Content/Images/no_image.gif\">\n          <img *ngIf=\"element.thumb !=''\"  class=\"poster\" src=\"{{element.thumb}}\">\n          <div>\n              <h2 id=\"label\">Rating:</h2>\n              <h2 id=\"rating\" [ngStyle]=\"{'color': ratecolor}\">{{element.score}}</h2>\n          </div>\n      </div>\n      <div class=\"col-md-9\">\n          <h1>{{element.title}}</h1>\n          <p>{{element.short_description}}</p>\n          <h4>{{element.publisher}}</h4>\n          <h3>Platforms</h3>\n          <div class=\"left-window\">\n              <div *ngFor=\"let name of platforms\">\n                  <h5>{{name}}</h5>\n              </div>\n          </div>\n      </div>\n    </div>\n</div>\n\n"
+	module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"imgs\">\n          <img *ngIf=\"element.thumb ==''\" class=\"poster\" src=\"http://www.puravankara.com/Content/Images/no_image.gif\">\n          <img *ngIf=\"element.thumb !=''\"  class=\"poster\" src=\"{{element.thumb}}\">\n          <div>\n              <h2 id=\"label\">Rating:</h2>\n              <h2 id=\"rating\" [ngStyle]=\"{'color': ratecolor}\">{{element.score}}</h2>\n          </div>\n        <iframe src=\"https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fmsagamefinder.azurewebsites.net%2F&layout=button_count&size=large&mobile_iframe=true&width=83&height=28&appId\" width=\"83\" height=\"28\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"></iframe>\n      </div>\n      <div class=\"col-md-9\">\n          <h1>{{element.title}}</h1>\n          <p>{{element.short_description}}</p>\n          <h4>{{element.publisher}}</h4>\n          <h3>Platforms</h3>\n          <div class=\"left-window\">\n              <div *ngFor=\"let name of platforms\">\n                  <h5>{{name}}</h5>\n              </div>\n          </div>\n      </div>\n    </div>\n</div>\n\n"
 
 /***/ },
 /* 557 */
@@ -28915,7 +28915,7 @@ webpackJsonp([1],[
 /* 559 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">\n    <a class=\"trailer\" href=\"https://www.youtube.com/results?search_query={{link}}+trailer\" target=\"_blank\">\n        <abbr title=\"Watch trailer\"> <img src=\"../css/images/youtube-button.png\"></abbr>\n    </a>\n</div>\n"
+	module.exports = "<div class=\"container\">\n  <h3>\n    Trailers:\n  </h3>\n    <a class=\"trailer\" href=\"https://www.youtube.com/results?search_query={{link}}+trailer\" target=\"_blank\">\n        <abbr title=\"Watch trailer\"> <img src=\"../css/images/youtube-button.png\"></abbr>\n    </a>\n</div>\n"
 
 /***/ },
 /* 560 */,
@@ -40272,7 +40272,7 @@ webpackJsonp([1],[
 /* 821 */
 /***/ function(module, exports) {
 
-	module.exports = ".card{\r\n    position: relative;\r\n    padding: 2%;\r\n    margin: 2%;\r\n    background-color: rgb(255, 252, 252);\r\n    /*border-bottom: 6px solid blue;*/\r\n    /*border: deepskyblue;*/\r\n    /*border-width: 3px;*/\r\n    /*border-style: groove;*/\r\n    box-shadow: 2px 2px 2px #001ca7;\r\n    text-align: center;\r\n    align-content: center;\r\n    height: 450px;\r\n\r\n}\r\n#image{\r\n    /*width: 160px;*/\r\n    height: 300px;\r\n    align-content: center;\r\n}\r\n.image-wrapp {\r\n    text-align: center;\r\n    height: 300px;\r\n    /*border: 1px solid #000;*/\r\n\r\n}\r\n.image-wrapp img {\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n}\r\n.poster {\r\n    margin:auto;\r\n    display: block;\r\n    position: relative;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n}\r\nimg{\r\n    width: 160px;\r\n}\r\n\r\n.borderLine{\r\n    border: 1px solid darkblue;\r\n    width: 100%;\r\n}\r\na{\r\n    color:blue;\r\n}\r\na:hover{\r\n    text-decoration: none;\r\n    color: #00a592;\r\n}\r\n.container{\r\n    margin-top: 100px;\r\n}"
+	module.exports = ".card{\n    position: relative;\n    padding: 2%;\n    margin: 2%;\n    background-color: rgb(255, 252, 252);\n    /*border-bottom: 6px solid blue;*/\n    /*border: deepskyblue;*/\n    /*border-width: 3px;*/\n    /*border-style: groove;*/\n    box-shadow: 2px 2px 2px #001ca7;\n    text-align: center;\n    align-content: center;\n    height: 450px;\n\n}\n#image{\n    /*width: 160px;*/\n    height: 300px;\n    align-content: center;\n}\n.image-wrapp {\n    text-align: center;\n    height: 300px;\n    /*border: 1px solid #000;*/\n\n}\n.image-wrapp img {\n    position: relative;\n    top: 50%;\n    transform: translateY(-50%);\n}\n.poster {\n    margin:auto;\n    display: block;\n    position: relative;\n    top: 50%;\n    transform: translateY(-50%);\n}\nimg{\n    width: 160px;\n}\n\n.borderLine{\n    border: 1px solid darkblue;\n    width: 100%;\n}\na{\n    color:blue;\n}\na:hover{\n    text-decoration: none;\n    color: #00a592;\n}\n.container{\n    margin-top: 100px;\n}\n.row{\n  text-align: center;\n  margin-left: 10%;\n}\n\n@media (max-width: 990px) {\n  .row{\n    margin-left: auto;\n  }\n}\n"
 
 /***/ },
 /* 822 */
@@ -40302,7 +40302,7 @@ webpackJsonp([1],[
 /* 826 */
 /***/ function(module, exports) {
 
-	module.exports = ".container{\r\n    margin-top: 0;\r\n    background-color: white;\r\n    padding: 30px;\r\n    text-align: center;\r\n}\r\n.trailer img{\r\n    max-height: 125px;\r\n    max-width: 150px;\r\n}"
+	module.exports = ".container{\n    margin-top: 0;\n    background-color: white;\n    padding: 30px;\n    text-align: left;\n}\n.trailer img{\n    max-height: 125px;\n    max-width: 150px;\n}\n.trailer a{\n  padding: 50px;\n}\n"
 
 /***/ }
 ]);
