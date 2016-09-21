@@ -1,0 +1,117 @@
+form{
+  text-align: center;
+}
+/*Clearing Floats*/
+.cf:before, .cf:after {
+  content:"";
+  display:table;
+}
+
+.cf:after {
+  clear:both;
+}
+
+.cf {
+  zoom:1;
+}
+/* Form wrapper styling */
+.form-wrapper {
+  position: relative;
+  max-width: 450px;
+  padding: 15px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  background: #444;
+  background: rgba(0,0,0,.2);
+  /*border-radius: 10px;*/
+  /*box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);*/
+}
+
+/* Form text input */
+
+.form-wrapper input {
+  max-width: 370px;
+  height: 40px;
+  float: left;
+  font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 0;
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  user-focus: true;
+  width: calc(100% - 50px);
+}
+
+.form-wrapper input:focus {
+  outline: 0;
+  background: #fff;
+  /*box-shadow: 0 0 2px rgba(0,0,0,.8) inset;*/
+}
+
+.form-wrapper input::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.form-wrapper input:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.form-wrapper input:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Form submit button */
+.form-wrapper button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  background: blueviolet;
+  border-radius: 0 3px 3px 0;
+  /*text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);*/
+}
+
+.form-wrapper button:hover {
+  background: mediumpurple;
+}
+
+.form-wrapper button:active,
+.form-wrapper button:focus {
+  background: blueviolet;
+  outline: 0;
+}
+
+.form-wrapper button:before { /* left arrow */
+  content: '';
+  position: absolute;
+  border-width: 8px 8px 8px 0;
+  border-style: solid solid solid none;
+  border-color: transparent blueviolet transparent;
+  top: 12px;
+  left: -6px;
+}
+
+.form-wrapper button:hover:before {
+  border-right-color: mediumpurple;
+}
+
+.form-wrapper button:focus:before,
+.form-wrapper button:active:before {
+  border-right-color: blueviolet;
+}
+
+.form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+  border: 0;
+  padding: 0;
+}

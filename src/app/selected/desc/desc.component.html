@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="imgs">
+          <img *ngIf="element.thumb ==''" class="poster" src="http://www.puravankara.com/Content/Images/no_image.gif">
+          <img *ngIf="element.thumb !=''"  class="poster" src="{{element.thumb}}">
+          <div>
+              <h2 id="label">Rating:</h2>
+              <h2 id="rating" [ngStyle]="{'color': ratecolor}">{{element.score}}</h2>
+          </div>
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fmsagamefinder.azurewebsites.net%2F&layout=button_count&size=large&mobile_iframe=true&width=83&height=28&appId" width="83" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
+      <div class="col-md-9">
+          <h1>{{element.title}}</h1>
+          <p>{{element.short_description}}</p>
+          <h4>{{element.publisher}}</h4>
+          <h3>Platforms</h3>
+          <div class="left-window">
+              <div *ngFor="let name of platforms">
+                  <h5>{{name}}</h5>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+

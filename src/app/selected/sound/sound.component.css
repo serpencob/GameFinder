@@ -1,0 +1,17 @@
+.container{
+    margin-top: 0;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+a{
+    color:blue;
+}
+a:hover{
+    text-decoration: none;
+    color: #00a592;
+}
+.tracks{
+    padding: 10px;
+}

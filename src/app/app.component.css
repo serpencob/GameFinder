@@ -1,0 +1,35 @@
+h1{
+  color:antiquewhite;
+  font-family: Orbitron;
+  text-shadow: 2px 2px 5px blue;
+}
+div{
+  text-align: center;
+}
+.search-box{
+  position: relative;
+  padding: 20%;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: darkblue;
+  /*background-image: url("/css/images/background.jpg");*/
+  /*background-repeat:no-repeat;*/
+  /*background-size:contain;*/
+  /*background-position:center;*/
+  /*background-size: 100%;*/
+  /*background: url("/css/images/background.jpg") center no-repeat;*/
+  background: url("/css/images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.search-box-top{
+  background-color: darkblue;
+  background: url("/css/images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

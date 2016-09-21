@@ -1,0 +1,12 @@
+<form [formGroup]="gameForm" (ngSubmit)="onSubmit()" id="searchString" class="form-wrapper cf">
+<input formControlName="receive" class="form-control" placeholder="Game here" type="text" autofocus>
+  <button type="submit" class="btn btn-default" [disabled]="!gameForm.valid"><span class="glyphicon glyphicon-search" ></span></button>
+</form>
+
+<div *ngIf="loading" id="loader-wrapper">
+  <div id="loader"></div>
+
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+
+</div>

@@ -1,0 +1,13 @@
+.container{
+    margin-top: 0;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+}
+.trailer img{
+    max-height: 125px;
+    max-width: 150px;
+}
+.trailer a{
+  padding: 50px;
+}

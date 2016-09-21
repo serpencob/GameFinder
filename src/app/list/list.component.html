@@ -1,0 +1,14 @@
+<div class="container">
+<div *ngIf="descriptionData!=[]"  class="row">
+    <div *ngFor="let element of descriptionData; let i=index" class="col-md-3 card">
+        <div id="image" class="image-wrapp">
+            <img *ngIf="element.thumb ==''" class="poster" src="http://www.puravankara.com/Content/Images/no_image.gif">
+            <img *ngIf="element.thumb !=''" class="poster" src="{{element.thumb}}">
+        </div>
+        <div class="borderLine"></div>
+      <h3>
+        <a [routerLink]="['game',i]">{{element.title}}</a>
+      </h3>
+    </div>
+</div>
+</div>

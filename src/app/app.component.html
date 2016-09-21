@@ -1,0 +1,10 @@
+<div class="row">
+      <div [ngClass]="onDataLoad?'search-box-top':'search-box'" class="col-xs-12">
+        <div>
+            <h1 *ngIf="!onDataLoad" class="animated zoomIn">Find your game</h1>
+            <search></search>
+        </div>
+      </div>
+
+      <router-outlet></router-outlet>
+</div>

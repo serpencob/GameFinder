@@ -1,0 +1,26 @@
+.container{
+    margin-top: 100px;
+    background-color: white;
+    padding: 50px;
+}
+.poster{
+    width: 160px;
+}
+.row{
+    text-align: left;
+}
+.imgs{
+    margin: 10px;
+    margin-right: 20px;
+    float: right;
+}
+.left-window{
+    padding: 10px;
+    text-align: left;
+}
+#rating{
+    float: right;
+}
+#label{
+    float: left;
+}
